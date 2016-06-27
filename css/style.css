@@ -56,12 +56,15 @@ header img{
  font-weight: 300;
  color: #292827;
  padding: 12px 50px 11px 50px;
+ font-family: 'Oswald', sans-serif;
 }
 #nav ul.navbar-nav li a:hover {
  
  color: white;
 background-color: #1b1b1b;
+font-family: 'Oswald', sans-serif;
 }
+
 #nav {
 	height: 45px;
 	width: 100%;
@@ -166,6 +169,13 @@ background-color: #1b1b1b;
 	border: none;
 	padding: 6px 20px 6px 20px;
 }
+
+.encima button:hover{
+	
+	background-color: rgba(0,0,0,0.79);
+	-webkit-transition: 0.8s ease;
+	transition: 0.8s ease;
+}
 .encima-2{
 	position: absolute;
 	top: 70px;
@@ -208,6 +218,12 @@ background-color: #1b1b1b;
 	color: #0b0b0c;
 	border: 1px solid #a59d81;
 	padding: 6px 20px 6px 20px;
+}
+.encima-2 button:hover{
+	border: 1px solid #b5af98;
+	background-color: rgba(255,255,255,0.5);
+	-webkit-transition: 0.8s ease;
+	transition: 0.8s ease;
 }
 #categoria{
 	width: 100%
@@ -359,6 +375,37 @@ hr {
 	font-weight: 300;
 	line-height:20px;
 }
+.owl-carousel .item p:nth-of-type(4) span:nth-of-type(1){
+  filter: contrast(0.1);
+	-webkit-filter: contrast(0.1);
+	-moz-filter: contrast(0.1);
+	-o-filter: contrast(0.1);
+	-ms-filter: contrast(0.1);
+}
+.owl-carousel .item p:nth-of-type(4) span a{
+	text-decoration: none;
+}
+.owl-carousel .item p:nth-of-type(4) span:nth-of-type(1):hover{
+  filter: contrast(1);
+	-webkit-filter: contrast(1);
+	-moz-filter: contrast(1);
+	-o-filter: contrast(1);
+	-ms-filter: contrast(1);
+}
+.owl-carousel .item p:nth-of-type(4) span:nth-of-type(2){
+  filter: contrast(0.1);
+	-webkit-filter: contrast(0.1);
+	-moz-filter: contrast(0.1);
+	-o-filter: contrast(0.1);
+	-ms-filter: contrast(0.1);
+}
+.owl-carousel .item p:nth-of-type(4) span:nth-of-type(2):hover{
+  filter: contrast(1);
+	-webkit-filter: contrast(1);
+	-moz-filter: contrast(1);
+	-o-filter: contrast(1);
+	-ms-filter: contrast(1);
+}
 #visitanos {
 	width: 100%;
 	height: 605px;
@@ -383,7 +430,7 @@ hr {
 #visitanos .col-md-6{
 	width: 483px;
 	height: 442px;
-	background-color: rgba(0,0,0,0.58);
+	background-color: rgba(0,0,0,0.6);
 	top: 50%;
 	--webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -397,6 +444,7 @@ hr {
  height: 100%;
  text-align: center;
  margin-top: 30px;
+
 }
 #tienda h1{
 
@@ -436,6 +484,38 @@ hr {
 	font-size: 18px;
 	font-weight: 300;
 	line-height:20px;
+}
+#tienda .col-md-4 p:nth-of-type(4) span:nth-of-type(1){
+  	filter: contrast(0.1);
+	-webkit-filter: contrast(0.1);
+	-moz-filter: contrast(0.1);
+	-o-filter: contrast(0.1);
+	-ms-filter: contrast(0.1);
+}
+#tienda .col-md-4 p:nth-of-type(4) span a{
+	text-decoration:none;
+}
+#tienda .col-md-4 p:nth-of-type(4) span:nth-of-type(1):hover{
+  text-decoration-line: none;
+  filter: contrast(1);
+	-webkit-filter: contrast(1);
+	-moz-filter: contrast(1);
+	-o-filter: contrast(1);
+	-ms-filter: contrast(1);
+}
+#tienda .col-md-4 p:nth-of-type(4) span:nth-of-type(2){
+  filter: contrast(0.1);
+	-webkit-filter: contrast(0.1);
+	-moz-filter: contrast(0.1);
+	-o-filter: contrast(0.1);
+	-ms-filter: contrast(0.1);
+}
+#tienda .col-md-4 p:nth-of-type(4) span:nth-of-type(2):hover{
+  filter: contrast(1);
+	-webkit-filter: contrast(1);
+	-moz-filter: contrast(1);
+	-o-filter: contrast(1);
+	-ms-filter: contrast(1);
 }
 #news{
 	margin-top: 80px;
@@ -535,4 +615,65 @@ input[type=email]{
 #space{
 	width: 100%;
 	height: 150px;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(122,94,106, 0.7);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px !important;
+}
+
+ #myNav input[type=text]{
+ background-color: transparent;
+border-color: transparent;
+outline: none;
+font-size: 120px;
+margin-left: 100px;
+width: 600px;
+color: #f4f5f0;
+
+}
+::-webkit-input-placeholder {
+   color: #f4f5f0;
+}
+#myNav button{
+background-color: transparent;
+border: none;
+font-size: 120px;
+color: #773390;
+outline: none;
 }

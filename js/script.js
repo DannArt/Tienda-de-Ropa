@@ -1,5 +1,7 @@
-//OWL CAROSEL
-$(document).ready(function() {
+$(function(){
+
+    "use strict";
+    new WOW().init();
 
     "use strict";
     
@@ -10,12 +12,11 @@ $(document).ready(function() {
         itemsDesktopSmall: [900, 2], // betweem 900px and 601px
         itemsTablet: [600, 1], //2 items between 600 and 0
     });
-});
 
-//WOW JS
-$(document).ready(function() {
-
-    "use strict";
- 
-    new WOW().init();
+    $("body").on("click", '#open' ,function(){
+        document.getElementById("myNav").style.height = "100%"
+    });
+    $("body").on("click", '.closebtn' ,function(){
+        document.getElementById("myNav").style.height = "0%"
+    });
 });
