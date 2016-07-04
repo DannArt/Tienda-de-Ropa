@@ -33,6 +33,21 @@
 	color: white;
 	background-color:#1b1b1b;
 }
+.navbar-nav > li > a:visited{
+    
+	color: white;
+	background-color:#1b1b1b;
+}
+.navbar-nav > li > a:focus{
+    
+	color: white;
+	background-color:#1b1b1b;
+}
+.navbar-nav > li > a:active{
+    
+	color: white;
+	background-color:#1b1b1b;
+}
 .navbar-right{
 	margin-right:15px;
 }
