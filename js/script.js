@@ -19,4 +19,9 @@ $(function(){
     $("body").on("click", '.closebtn' ,function(){
         document.getElementById("myNav").style.height = "0%"
     });
+    $("body").on('click'," .navbar-nav li:nth-child(1)", function()
+        {
+            $('html, body').animate({scrollTop: $('#novedades').offset().top},800);
+            return false;
+    });
 });
